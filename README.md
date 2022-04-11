@@ -25,7 +25,7 @@
 
 【本地安装】点击 `code` 下载代码为 `.zip` 格式，进入后台 -> 外观 -> 主题 -> 安装 -> 本地安装，上传该 `.zip` 代码即可。
 
- 【远程安装】进入后台 -> 外观 -> 主题 -> 安装 -> 远程下载，输入 `https://github.com/kevinng77/Knarc.git` ，点击下载。
+ 【远程安装】进入后台 -> 外观 -> 主题 -> 安装 -> 远程下载，输入 https://github.com/kevinng77/halo-theme-knarc.git ，点击下载。
 
 ## 修改历史
 
