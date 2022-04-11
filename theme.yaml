@@ -1,0 +1,11 @@
+id: Knarc
+name: Knarc
+author:
+  name: caicai
+  website: https://www.caicai.me
+description: Halo theme - modified from caicai-anatole
+logo: https://avatars1.githubusercontent.com/u/1811819?s=460&v=4
+website: https://github.com/kevinng77/halo-them-knarc
+repo: https://github.com/kevinng77/halo-them-knarc
+version: 1.0.0
+require: 1.5.1

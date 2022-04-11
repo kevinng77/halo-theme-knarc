@@ -1,0 +1,149 @@
+sns:
+  label: 社交资料
+  items:
+    rss:
+      name: rss
+      label: RSS
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    twitter:
+      name: twitter
+      label: Twitter
+      type: text
+      placeholder: '只需填入 Twitter 用户名即可'
+    facebook:
+      name: facebook
+      label: Facebook
+      type: text
+      placeholder: '只需填入 Facebook 用户名即可'
+    instagram:
+      name: instagram
+      label: Instagram
+      type: text
+      placeholder: '只需填入 Instagram 用户名即可'
+    dribbble:
+      name: dribbble
+      label: Dribbble
+      type: text
+      placeholder: '只需填入 Dribbble 用户名即可'
+    weibo:
+      name: weibo
+      label: 微博
+      type: text
+      placeholder: '只需填入微博 Id 即可'
+    email:
+      name: email
+      label: Email
+      type: text
+      placeholder: '只需填入邮箱地址即可'
+    github:
+      name: github
+      label: Github
+      type: text
+      placeholder: '只需填入 Github 用户名即可'
+    qq:
+      name: qq
+      label: QQ
+      type: text
+      placeholder: '只需填入 QQ 号即可'
+    telegram:
+      name: telegram
+      label: Telegram
+      type: text
+      placeholder: '只需填入 Telegram Id 即可'
+style:
+  label: 样式设置
+  items:
+    post_title_uppper:
+      name: post_title_uppper
+      label: 文章标题大写
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    blog_title_uppper:
+      name: blog_title_uppper
+      label: 博客标题大写
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    hitokoto:
+      name: hitokoto
+      label: 博客描述开启一言
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_style:
+      name: sidebar_style
+      label: '侧边栏/顶栏风格'
+      type: radio
+      default: 'arc'
+      options:
+        - value: 'arc'
+          label: 'arc风格'
+        - value: 'white'
+          label: '全白风格'
+    scrollbar:
+      name: scrollbar
+      label: 全局滚动条颜色
+      type: color
+      default: '#6ba4e7'
+    code_pretty:
+      name: code_pretty
+      label: 文章代码高亮主题
+      type: select
+      default: 'atom-one-light'
+      options:
+        - value: 'default'
+          label: 'default'
+        - value: 'tomorrow-night-bright'
+          label: 'tomorrow-night-bright'
+        - value: 'atom-one-light'
+          label: 'atom-one-light'
+        - value: 'atom-one-dark'
+          label: 'atom-one-dark'  
+        - value: 'github'
+          label: 'github'       
+        - value: 'arduino-light'
+          label: 'arduino-light'  
+        - value: 'vs2015'
+          label: 'vs2015' 
+        - value: 'stackoverflow-light'
+          label: 'stackoverflow-light'        
+    code_line_number:
+      name: code_line_number
+      label: 开启代码行号
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    custom:
+      name: custom
+      label: 自定义样式
+      type: textarea
+      placeholder: '不需要 <style></style> 标签'
