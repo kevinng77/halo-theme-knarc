@@ -94,6 +94,28 @@ style:
           label: 开启
         - value: false
           label: 关闭
+    
+    post_split:
+      name: post_split
+      label: '文章与左边栏/顶栏分离，以块形式显示'
+      type: radio
+      default: 'off'
+      options:
+        - value: 'off'
+          label: '关'
+        - value: 'on'
+          label: '开'
+
+    sidebar_shadow:
+      name: sidebar_shadow
+      label: '左边栏阴影'
+      type: radio
+      default: 'on'
+      options:
+        - value: 'on'
+          label: '开'
+        - value: 'off'
+          label: '关'
     sidebar_style:
       name: sidebar_style
       label: '侧边栏/顶栏风格'

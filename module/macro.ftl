@@ -85,6 +85,28 @@
             background-color: #eee;
         }
         ${settings.custom!}
+
+        <#if settings.post_split?? && settings.post_split == 'on'>
+        @media screen and (min-width:960px) {
+            .post-page .post {
+                margin: 2em 2em;
+                padding: 3em;
+                border: .5px solid #dddddd;
+                border-radius: 5px;
+            }
+            .post-entry {
+                padding: 3em;
+                margin: 2em;
+                border: .5px solid #dddddd;
+                border-radius: 5px;
+            }
+            .post-entry .post-footer .meta{
+                border-bottom: unset;
+                padding: unset;
+            }
+        }
+
+        </#if>
     </style>
 </head>
 <body>

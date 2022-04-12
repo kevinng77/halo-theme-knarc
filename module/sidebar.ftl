@@ -1,7 +1,13 @@
+<#if settings.sidebar_shadow?? && settings.sidebar_shadow == 'on'>
+<style>.sidebar {
+        box-shadow: -2px 0px 9px 0px;
+} </style>
+</#if>
 <#if settings.sidebar_style?? && settings.sidebar_style == 'arc'>
 <style type="text/css">
 .sidebar {
     background-color: ${settings.sidebar_color!'#3f434e'};
+    border: 0px;
 }
 
 .sidebar .logo-title .description,
