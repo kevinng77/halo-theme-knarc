@@ -756,7 +756,7 @@ a.btn {
     padding: 0 6px 0 10px;
     border-radius: 2px;
     border: 1px solid rgb(217, 217, 217);
-    background: 0 0;
+    background: #fff;
     outline: 0;
     color: #000;
     font-size: 15px;
