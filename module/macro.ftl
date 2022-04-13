@@ -14,7 +14,7 @@
     <meta name="keywords" content="${meta_keywords!}"/>
     <meta name="description" content="${meta_description!}" />
     <@global.head />
-    <link href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="${theme_base!}/source/plugins/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
     <link href="${theme_base!}/source/css/blog_basic.min.css?version=88107691fe" rel="stylesheet">
     <link href="${theme_base!}/source/css/style.min.css" type="text/css" rel="stylesheet" />
 

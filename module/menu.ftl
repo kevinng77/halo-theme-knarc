@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="${theme_base!}/source/css/moon-menu.css">
-<link rel="stylesheet" href="${theme_base!}/source/font.css">
+<#--  <link rel="stylesheet" href="${theme_base!}/source/font.css">  -->
 
 <div class="moon-menu" id="moonMenu">
     <div class="moon-menu-button" onclick="ckMoonButton()">
