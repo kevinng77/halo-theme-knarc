@@ -1,7 +1,7 @@
 <#if settings.sidebar_style?? && settings.sidebar_style == 'arc'>
 <style type='text/css'>
 .page-top {
-    background-color: #e8e8e8;
+    background-color: #f8f8f8;
 }
 
 .searchbox input::-webkit-input-placeholder {
