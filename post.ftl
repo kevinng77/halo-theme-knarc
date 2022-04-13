@@ -47,6 +47,8 @@
                         </#if>
                     </ul>
                 </div>
+                <#include "module/menu.ftl">
+
                 <div id="comment_widget" style="margin: 30px;">
                     <#include "module/comment.ftl">
                     <@comment post=post type="post" />
@@ -57,6 +59,5 @@
         </div>
     </div>
 </div>
-<#include "module/menu.ftl">
 
 <@footer></@footer>
