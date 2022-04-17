@@ -125,9 +125,14 @@ li p,
 ol p,
 ul p {
     margin: 0;
-    overflow: visible
+    overflow: visible;
 }
-
+@media screen and (min-width:960px) {
+    .content blockquote p {
+        padding-right: 1em;
+    }
+    
+}
 a img {
     border: none
 }

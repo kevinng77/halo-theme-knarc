@@ -12,16 +12,12 @@
                             <a>${post.title}</a>
                         </h3>
                     </div>
-                    <div class="post-content">
-                        ${post.formatContent!}
-                    </div>
                     <div class="post-footer">
-                        <div class="meta">
+                        <div class="meta" style="padding:1.5em 0 1em 0">
                             <div class="info">
+                            <span class="author" style="padding-right:5px">${(user.nickname)!}</span>
                                 <i class="fa fa-sun-o"></i>
                                 <span class="date">${post.createTime?string("yyyy-MM-dd")}</span>
-                                <i class="fa fa-comment-o"></i>
-                                <a href="${post.fullPath!}#comment_widget">Comments</a>
                                 <#if tags?size gt 0>
                                     <i class="fa fa-tag"></i>
                                     <#list tags as tag>
@@ -31,6 +27,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="post-content">
+                        ${post.formatContent!}
+                    </div>
+                    
                 </div>
 
                 <div class="pagination">

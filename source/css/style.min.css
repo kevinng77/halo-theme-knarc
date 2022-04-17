@@ -380,7 +380,11 @@ a:hover {
     float: left;
     font-size: 14px
 }
-
+@media screen and (max-width:960px) {
+    .post .post-footer .meta .info {
+        font-size: 10px
+    }
+}
 .post .post-footer .meta .info .date {
     margin-right: 10px
 }
