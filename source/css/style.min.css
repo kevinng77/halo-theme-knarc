@@ -7,7 +7,7 @@ html {
 
 body {
     color: rgba(0, 0, 0, .6);
-    font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font-family: SimSun, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei',  sans-serif;
     font-size: 15px;
     width: 100%;
     margin: 0 auto 30px auto;
@@ -740,8 +740,8 @@ a.btn {
 }
 
 .searchbox .searchbtn {
-    padding: 1px 8px 5px;
-    border-radius: 2px;
+    padding: 3.5px 8px 5px;
+    border-radius: 100%;
 }
 
 .searchbox:hover .btn_off i {
@@ -789,6 +789,9 @@ a.btn {
         z-index: 5;
         margin-right:unset;
         position: relative;
+    }
+    .searchbox .searchbtn {
+        padding: 2px 8px 6px;
     }
     .searchbox .active {
         width: 310px;
