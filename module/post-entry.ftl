@@ -5,14 +5,6 @@
                 <a href="${post.fullPath!}">${post.title}</a>
             </h3>
         </div>
-        <div class="post-content">
-            <div class="p_part">
-                <p>${post.summary!}...</p>
-            </div>
-            <div class="p_part">
-                <p></p>
-            </div>
-        </div>
         <div class="post-footer">
             <div class="meta">
                 <div class="info">
@@ -27,6 +19,14 @@
                         </#list>
                     </#if>
                 </div>
+            </div>
+        </div>
+        <div class="post-content">
+            <div class="p_part">
+                <p>${post.summary!}...</p>
+            </div>
+            <div class="p_part">
+                <p></p>
             </div>
         </div>
     </div>

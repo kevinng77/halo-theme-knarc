@@ -7,7 +7,7 @@ html {
 
 body {
     color: rgba(0, 0, 0, .6);
-    font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei',  SimSun, sans-serif;
     font-size: 15px;
     width: 100%;
     margin: 0 auto 30px auto;
@@ -188,7 +188,7 @@ a:hover {
     list-style: none;
     padding: 17px 30px;
     float: left;
-    font-size: 15px
+    font-size: 14px
 }
 
 .page-top .nav li {
@@ -199,7 +199,7 @@ a:hover {
 
 .page-top .nav a {
     color: #838383;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .page-top .nav a:hover {
@@ -208,7 +208,8 @@ a:hover {
 
 .page-top .nav a.current {
     padding-bottom: 15px;
-    border-bottom: 2px solid #5a5a5a
+    /* border-bottom: 2px solid #5a5a5a */
+    font-weight:600
 }
 
 .page-top .information {
@@ -371,23 +372,29 @@ a:hover {
 .post .post-footer .meta {
     max-width: 100%;
     height: 25px;
-    color: #bbb;
+    color: #666666;
     border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 2em;
+    /* padding-bottom: 2em; */
+    padding: .8em 0;
+    font-weight: 300
 }
 
 .post .post-footer .meta .info {
     float: left;
     font-size: 14px
 }
-
+@media screen and (max-width:960px) {
+    .post .post-footer .meta .info {
+        font-size: 10px
+    }
+}
 .post .post-footer .meta .info .date {
     margin-right: 10px
 }
 
 .post .post-footer .meta a {
     text-decoration: none;
-    color: #bbb;
+    color: #666666;
     padding-right: 10px
 }
 
@@ -736,8 +743,8 @@ a.btn {
 }
 
 .searchbox .searchbtn {
-    padding: 1px 8px 5px;
-    border-radius: 2px;
+    padding: 3.5px 8px 5px;
+    border-radius: 100%;
 }
 
 .searchbox:hover .btn_off i {
@@ -755,7 +762,7 @@ a.btn {
     padding: 0 6px 0 10px;
     border-radius: 2px;
     border: 1px solid rgb(217, 217, 217);
-    background: 0 0;
+    background: #fff;
     outline: 0;
     color: #000;
     font-size: 15px;
@@ -772,7 +779,26 @@ a.btn {
     margin: 10px;
 }
 
+
 @media screen and (max-width:960px) {
+    .page-top .nav {
+        font-size: 12px;
+    }
+    .page-top .nav a.current {
+        padding-bottom: 19px;
+    }
+    .searchbox {
+        margin-top: -4em;
+        z-index: 5;
+        margin-right:unset;
+        position: relative;
+    }
+    .searchbox .searchbtn {
+        padding: 2px 8px 6px;
+    }
+    .searchbox .active {
+        width: 310px;
+    }
     .sidebar {
         display: none;
     }
@@ -801,27 +827,20 @@ a.btn {
 }
 
 @media screen and (min-width:960px) {
-    .post {
+    .post-page .post {
         background-color: #fff;
-        margin: 1em 2em;
-        padding: 3em;
+        padding: 4em;
         border: .5px solid #dddddd;
         border-radius: 2px;
     }
-
-    .post-page .post {
-        padding: 3em;
+    .post-entry .post-content {
+        margin:0;
+        padding:.8em
     }
-
     .post-entry {
-        padding: 2em 2em;
-        border-radius: 2px;
+        padding: 2.5em 4em 0;
     }
 
-    .post .post-footer .meta {
-        border-bottom: unset;
-        padding-bottom: unset;
-    }
 }
 
 .tag-chips {
