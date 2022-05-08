@@ -369,11 +369,30 @@ a:hover {
     font-size: 16px
 }
 
+.post .post-entry-footer .meta {
+    max-width: 100%;
+    border-bottom: 1.5px solid #f0f0f0;
+}
+
+.post .post-entry-footer .meta .more {
+    padding: 5px 10px;
+    border-radius: 15px;
+    line-height: 1;
+    font-size: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #4786d6;
+    border: 1px solid #4786d6;
+}
+
+
+
 .post .post-mid .meta {
     max-width: 100%;
     height: 25px;
     color: #666666;
-    border-bottom: 1px solid #f0f0f0;
+    /* border-bottom: 1px solid #f0f0f0; */
     /* padding-bottom: 2em; */
     padding: .8em 0;
     font-weight: 300
@@ -383,6 +402,7 @@ a:hover {
     float: left;
     font-size: 14px
 }
+
 @media screen and (max-width:960px) {
     .post .post-mid .meta .info {
         font-size: 10px
@@ -490,7 +510,7 @@ a:hover {
     border-bottom: 1px solid #f2f2f2
 }
 
-.mid {
+.footer.post-mid {
     clear: both;
     text-align: center;
     font-size: 10px;
@@ -502,11 +522,11 @@ a:hover {
     background: #fff
 }
 
-.mid a {
+.footer.post-mid a {
     color: #a6a6a6
 }
 
-.mid a:hover {
+.footer.post-mid a:hover {
     color: #4786d6
 }
 
@@ -817,7 +837,7 @@ a.btn {
         line-height: 1.6;
     }
 
-    .mid {
+    .footer.post-mid {
         display: none;
     }
 
@@ -861,7 +881,7 @@ a.btn {
     line-height: 20px;
 }
 
-.page-mid {
+.page-footer {
     position: relative;
     clear: both;
     text-align: center;
@@ -872,11 +892,11 @@ a.btn {
     padding-bottom: 20px;
 }
 
-.page-mid a {
+.page-footer a {
     color: #a6a6a6
 }
 
-.page-mid a:hover {
+.page-footer a:hover {
     color: #4786d6
 }
 
