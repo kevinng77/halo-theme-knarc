@@ -32,7 +32,7 @@
         <div class="post-entry-footer">
             <div class="meta">
                 <div class='more'>
-                    阅读全文
+                    <a href="${post.fullPath!}" style="color:#4786d6">阅读全文</a>
                 </div>
             </div>
         </div>
