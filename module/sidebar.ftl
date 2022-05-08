@@ -9,19 +9,30 @@
     background-color: ${settings.sidebar_color!'#3f434e'};
     border: 0px;
 }
-
 .sidebar .logo-title .description,
 .sidebar .logo-title .title a,
 .sidebar .social-links a {
-    color: ${settings.sidebar_font_color!'#bac3cf'};
+    color: #bac3cf;
 }
-
 </style>
 </#if>
+<#if settings.sidebar_image?? && settings.sidebar_image != ''>
+<style>.sidebar {
+       background-image: url(${settings.sidebar_image!});
+} 
+.sidebar .logo-title .description,
+.sidebar .logo-title .title a,
+.sidebar .social-links a {
+    color: ${settings.sidebar_font_color!'#ffffff'};
+}
+</style>
+</#if>
+
 <div class="sidebar">
     <div class="logo-title">
         <div class="title">
-            <img src="<#if blog_logo?? && blog_logo!=''>${blog_logo!}<#else>${user.avatar!}</#if>" style="width:127px;height:127px;overflow:hidden;border-radius:50%" />
+            <img src="<#if blog_logo?? && blog_logo!=''>${blog_logo!}<#else>${user.avatar!}</#if>" 
+            style="width:127px;height:127px;overflow:hidden;border-radius:50%;border: 2px #fff outset;" />
             <h3 title="">
                 <a href="${blog_url!}">${blog_title!}</a>
             </h3>

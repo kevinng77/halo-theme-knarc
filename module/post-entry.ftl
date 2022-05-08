@@ -5,7 +5,7 @@
                 <a href="${post.fullPath!}">${post.title}</a>
             </h3>
         </div>
-        <div class="post-footer">
+        <div class="post-mid">
             <div class="meta">
                 <div class="info">
                     <i class="fa fa-sun-o"></i>
@@ -27,6 +27,13 @@
             </div>
             <div class="p_part">
                 <p></p>
+            </div>
+        </div>
+        <div class="post-entry-footer">
+            <div class="meta">
+                <div class='more'>
+                    <a href="${post.fullPath!}" style="color:#4786d6">阅读全文</a>
+                </div>
             </div>
         </div>
     </div>

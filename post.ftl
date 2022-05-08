@@ -12,7 +12,7 @@
                             <a>${post.title}</a>
                         </h3>
                     </div>
-                    <div class="post-footer">
+                    <div class="post-mid">
                         <div class="meta" style="padding:1.5em 0 1em 0">
                             <div class="info">
                             <span class="author" style="padding-right:5px">${(user.nickname)!}</span>
