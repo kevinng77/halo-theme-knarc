@@ -116,6 +116,7 @@ style:
           label: '开'
         - value: 'off'
           label: '关'
+
     sidebar_style:
       name: sidebar_style
       label: '侧边栏/顶栏风格'
@@ -126,11 +127,25 @@ style:
           label: 'arc风格'
         - value: 'white'
           label: '全白风格'
+
+    sidebar_image:
+      name: sidebar_image
+      label: '侧边栏背景图片'
+      type: attachment
+      default: ''
+
+    sidebar_font_color:
+      name: sidebar_font_color
+      label: '侧边栏字体颜色'
+      type: color
+      default: ''
+
     scrollbar:
       name: scrollbar
       label: 全局滚动条颜色
       type: color
       default: '#6ba4e7'
+
     code_pretty:
       name: code_pretty
       label: 文章代码高亮主题

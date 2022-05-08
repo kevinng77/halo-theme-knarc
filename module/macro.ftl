@@ -100,7 +100,7 @@
                 border: .5px solid #dddddd;
                 border-radius: 5px;
             }
-            .post-entry .post-footer .meta{
+            .post-entry .post-entry-footer .meta{
                 border-bottom: unset;
                 padding: unset;
             }

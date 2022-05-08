@@ -15,7 +15,7 @@
                     <div class="post-content">
                         ${sheet.formatContent!}
                     </div>
-                    <div class="post-footer">
+                    <div class="post-mid">
                         <div class="meta">
                             <div class="info">
                                 <i class="fa fa-sun-o"></i>
