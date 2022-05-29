@@ -186,7 +186,7 @@ a:hover {
 
 .page-top .nav {
     list-style: none;
-    padding: 17px 30px;
+    padding: 17px 0 17px 30px;
     float: left;
     font-size: 14px
 }
@@ -212,33 +212,6 @@ a:hover {
     font-weight:600
 }
 
-.page-top .information {
-    float: right;
-    padding-top: 12px;
-    padding-right: 20px;
-    min-width: 25%
-}
-
-.page-top .information .avatar {
-    float: right
-}
-
-.page-top .information .avatar img {
-    width: 32px;
-    height: 32px;
-    border-radius: 300px
-}
-
-.page-top .information .back_btn {
-    float: left;
-    padding-top: 5px;
-    margin-right: -10px
-}
-
-.page-top .information .back_btn li {
-    display: initial;
-    padding-right: 40px
-}
 
 .sidebar {
     width: 24%;
@@ -408,6 +381,7 @@ a:hover {
         font-size: 10px
     }
 }
+
 .post .post-mid .meta .info .date {
     margin-right: 10px
 }
@@ -754,30 +728,26 @@ a.btn {
 
 .searchbox {
     float: right;
-    margin: 2px 1px 0 -10px;
+    padding-top: 12px;
+    /* margin: 2px 1px 0 -10px; */
 }
-
+.searchbox form {
+    float:right;
+}
 .searchbox .active {
     opacity: 1;
     width: 170px;
 }
 
-.searchbox .searchbtn {
-    padding: 3.5px 8px 5px;
+.searchbtn {
+    padding: 0 7px;
     border-radius: 100%;
-}
-
-.searchbox:hover .btn_off i {
-    color: #34ace0;
-    transition: .9s
-}
-
-.searchbox .btn_on i {
-    color: #fff;
+    float:right;
+    margin: 12px 20px 0 0;
 }
 
 .searchtxt {
-    width: 50px;
+    width: 0px;
     margin-right: 10px;
     padding: 0 6px 0 10px;
     border-radius: 2px;
@@ -791,7 +761,17 @@ a.btn {
     opacity: 0;
 }
 
-.searchbox .btn_on {
+.btn_off:hover i {
+    color: #34ace0;
+    transition: .9s
+}
+
+.btn_on i {
+    color: #fff;
+}
+
+
+.btn_on {
     background: #6ba4e7;
 }
 
@@ -807,18 +787,23 @@ a.btn {
     .page-top .nav a.current {
         padding-bottom: 19px;
     }
+
     .searchbox {
-        margin-top: -4em;
-        z-index: 5;
-        margin-right:unset;
-        position: relative;
+        width:-webkit-fill-available;
     }
-    .searchbox .searchbtn {
-        padding: 2px 8px 6px;
+    .searchbox form{
+        float: unset;
+    }
+    .searchbox .searchtxt {
+
     }
     .searchbox .active {
-        width: 310px;
+        /* position:fixed; */
+        width: 90%;
+        margin: 0px 5%;
+        /* max-width: 300px; */
     }
+
     .sidebar {
         display: none;
     }

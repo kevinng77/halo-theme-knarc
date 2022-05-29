@@ -26,14 +26,14 @@
             </#list>
         </@menuTag>
     </div>
-    <div class="information">
-        <div class="searchbox">
-            <form method="get" action="/search" role="search">
-                <input class="searchtxt" type="search" name="keyword" placeholder="搜索文章" required>
-                <a class="searchbtn btn_off"><i class="fa fa-search"></i></a>
-            </form>
-        </div>
+    <a class="searchbtn btn_off"><i class="fa fa-search"></i></a>
+
+    <div class="searchbox">
+        <form method="get" action="/search" role="search">
+            <input class="searchtxt" type="search" name="keyword" placeholder="搜索文章" required>
+        </form>
     </div>
+
 </div>
 
 <script>
