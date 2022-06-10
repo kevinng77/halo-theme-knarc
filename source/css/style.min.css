@@ -18,7 +18,8 @@ p {
     line-height: 1.9em;
     font-weight: 400;
     font-size: 14px;
-    word-break: break-all
+    word-break: break-all;
+    letter-spacing: 1px;
 }
 
 a {
@@ -278,6 +279,7 @@ a:hover {
 .post {
     background-color: #fff;
     padding: 2em;
+    letter-spacing: 1px;
 }
 
 .post-entry {
@@ -333,13 +335,13 @@ a:hover {
 
 .post .post-content h3 {
     color: #5f5f5f;
-    font-size: 22px;
+    /* font-size: 22px; */
     font-weight: 600
 }
 
 .post .post-content h4 {
     color: #5f5f5f;
-    font-size: 16px
+    /* font-size: 16px */
 }
 
 .post .post-entry-footer .meta {
@@ -729,7 +731,7 @@ a.btn {
 .searchbox {
     float: right;
     padding-top: 12px;
-    /* margin: 2px 1px 0 -10px; */
+    margin: 2px 1px 0 -10px;
 }
 .searchbox form {
     float:right;
@@ -740,10 +742,13 @@ a.btn {
 }
 
 .searchbtn {
-    padding: 0 7px;
+    width: 30px;
+    height: 30px;
+    /* padding: 0 7px; */
     border-radius: 100%;
     float:right;
-    margin: 12px 20px 0 0;
+    margin: 14px 20px 0 0;
+    text-align: center;
 }
 
 .searchtxt {
@@ -789,18 +794,30 @@ a.btn {
     }
 
     .searchbox {
-        width:-webkit-fill-available;
+        width:0px;
+        position: fixed;
     }
     .searchbox form{
         float: unset;
     }
-    .searchbox .searchtxt {
-
+    .searchtxt {
+        float: right;
     }
-    .searchbox .active {
-        /* position:fixed; */
+    .active {
         width: 90%;
-        margin: 0px 5%;
+    }
+    p {
+        letter-spacing: 2px;
+    }
+
+    .katex{
+        font: 1em;
+    }
+    .searchbox .active{
+        /* position:fixed; */
+        opacity: 1;
+        width: 90%;
+        /* margin: 0px 5%; */
         /* max-width: 300px; */
     }
 
@@ -820,6 +837,7 @@ a.btn {
 
     .post-title h3 {
         line-height: 1.6;
+        font-size: 15px;
     }
 
     .footer.post-mid {
@@ -890,4 +908,9 @@ pre code.hljs {
     line-height: 1.5em;
     font-size: .9em;
     border: 1px solid #f1f1f1;
+}
+
+.katex{
+    overflow-x:auto;
+    overflow-y: hidden;
 }

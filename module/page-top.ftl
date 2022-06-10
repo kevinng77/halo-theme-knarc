@@ -38,10 +38,13 @@
 
 <script>
 var search_btn = document.querySelector('.searchbtn');
-var box = document.querySelector('.searchtxt');
+var box = document.querySelector('.searchbox');
+var txt = document.querySelector('.searchtxt');
 
 search_btn.onclick = function () {
     box.classList.toggle('active');
+    txt.classList.toggle('active');
+
     search_btn.classList.toggle('btn_on');
     search_btn.classList.toggle('btn_off');
 }

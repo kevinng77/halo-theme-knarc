@@ -1,5 +1,5 @@
 .post-content p {
-    font-size: 16px !important
+    font-size: 14px !important
 }
 
 .post-content .tip {
@@ -72,29 +72,67 @@ h6 {
 }
 
 h1 {
-    font-size: 2.1rem;
-    line-height: 1.2em
+    font-size: 1.3rem;
+    line-height: 1.2em;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1.9rem;
-    line-height: 1.2em
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    padding-bottom: .7em ;
+    border-bottom: 1px solid #dbdbdb
+}
+h1::before,
+h1::after,
+h2::before, 
+.post-content h3::before, 
+h4::before, 
+h5::before, 
+h6::before{
+    color: #4786d6;
+    font-size: 15px;
+    margin-right: 10px;
 }
 
-h3 {
-    font-size: 1.75rem
+h1::before{
+    content: "——";
+}
+h1::after{
+    content: "——";
+    margin-left: 10px;
 }
 
-h4 {
-    font-size: 1.3rem
+h2::before {
+    content: "-";
+    background-color: #4786d6;
+}
+.post-content h3::before{
+    content: "#";
+}
+h4::before{
+    content: "##";
+}
+.post-content h3 {
+    font-size: 1.1rem
 }
 
-h5 {
-    font-size: 1.3rem
+h4,h5,h6 {
+    font-size: 1rem
 }
 
+@media screen and (max-width:960px) {
+    h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-    font-size: 1.3rem
+    margin: 1em 0;
+}
+h3{
+    font-size: 15px;
+}
 }
 
 img {
