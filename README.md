@@ -6,10 +6,9 @@
 
 预览效果欢迎参考我的博客：http://wujiawen.xyz
 
-
 ## 预览截图
 
-**首页将备案/版权等信息统一移动到了右边栏最下方，保留 Anatole 原作者信息。** 
+**首页将备案/版权等信息统一移动到了右边栏最下方，保留 Anatole 原作者信息。**
 
 ![image-20220510231849028](https://gitee.com/kevinng77/picgo_img/raw/master/image-20220510231849028.png)
 
@@ -25,14 +24,13 @@
 
 【本地安装】点击 `code` 下载代码为 `.zip` 格式，进入后台 -> 外观 -> 主题 -> 安装 -> 本地安装，上传该 `.zip` 代码即可。
 
- 【远程安装】进入后台 -> 外观 -> 主题 -> 安装 -> 远程下载，输入 https://github.com/kevinng77/halo-theme-knarc.git ，点击下载。
+ 【远程安装】进入后台 -> 外观 -> 主题 -> 安装 -> 远程下载，输入 https://github.com/kevinng77/halo-theme-knarc.git ，点击下载。若觉得 github 下载速度慢，可以尝试使用 gitee 源 https://gitee.com/kevinng77/halo_theme_knarc.git。
 
 ## 修改历史
 
 ### Knarc - v1.0
 
 > 相对于  [halo-theme-anatole](https://github.com/halo-dev/halo-theme-anatole)，本主题主要做了以下修改：
->
 
 修改了博客整体布局和风格添加了 Arc 配色方案。包括：
 
@@ -62,7 +60,7 @@
 - [ ] 备案信息位置
 - [ ] 文章加粗字体颜色
 - [ ] menu目录样式更改，添加点击效果
-- [ ] 目录展开时候特效调整，收缩时候特效调整 
+- [ ] 目录展开时候特效调整，收缩时候特效调整
 - [ ] index页面支持<--more--> 截取摘要片段
 
 ## 其他
@@ -110,9 +108,8 @@ markdown中添加
 
 ```html
 <a href="https://beian.miit.gov.cn/" target="_blank">备案号</a>
-&nbsp;
+ 
 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=" target="_blank">
 <img src="/themes/knarc/source/images/备案图标.png">闽公网安备 备案号 
 </a>
 ```
-

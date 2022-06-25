@@ -29,6 +29,8 @@
                 display: block;
                 width: 100%;
                 overflow: auto;
+                font-size: 12px;
+                line-height:1.6em;
             }
             table:not(.hljs-ln) th {
                 font-weight: 600;
@@ -43,6 +45,9 @@
                 border-top: 1px solid #c6cbd1;
             }
             table:not(.hljs-ln) tr:nth-child(2n) {
+                background-color: #f6f8fa;
+            }
+            table:not(.hljs-ln) thead th {
                 background-color: #f6f8fa;
             }
         </style>
