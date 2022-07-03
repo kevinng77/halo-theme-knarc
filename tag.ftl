@@ -3,8 +3,10 @@
 <#include "module/sidebar.ftl">
 <div class="main">
     <#include "module/page-top.ftl">
+        <div class="mask"></div>
+
     <div class="autopagerize_page_element">
-        <div class="content">
+        <div class="content no-img">
             <div class="tag-chips">
                 <@tagTag method="list">
                     <#list tags as tag>

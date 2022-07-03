@@ -1,30 +1,31 @@
-<#if settings.sidebar_shadow?? && settings.sidebar_shadow == 'on'>
-<style>.sidebar {
-        box-shadow: -2px 0px 9px 0px;
-} </style>
-</#if>
+
 <#if settings.sidebar_style?? && settings.sidebar_style == 'arc'>
 <style type="text/css">
-.sidebar {
-    background-color: ${settings.sidebar_color!'#3f434e'};
-    border: 0px;
-}
-.sidebar .logo-title .description,
-.sidebar .logo-title .title a,
-.sidebar .social-links a {
-    color: #bac3cf;
-}
+    .sidebar {
+        background-color: ${settings.sidebar_color!'#3f434e'};
+        border: 0px;
+    }
+    .sidebar .logo-title .description,
+    .sidebar a,
+    .social-links .link-icon {
+        color: #bac3cf;
+        fill: #bac3cf
+    }
 </style>
 </#if>
 <#if settings.sidebar_image?? && settings.sidebar_image != ''>
-<style>.sidebar {
-       background-image: url(${settings.sidebar_image!});
-} 
-.sidebar .logo-title .description,
-.sidebar .logo-title .title a,
-.sidebar .social-links a {
-    color: ${settings.sidebar_font_color!'#ffffff'};
-}
+<style>
+    .sidebar {
+        background-image: linear-gradient( rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5) ), url(${settings.sidebar_image!});
+
+    } 
+    .sidebar .logo-title .description,
+    .sidebar a,
+    .social-links .link-icon {
+        color: ${settings.sidebar_font_color!'#ffffff'};
+        fill:  ${settings.sidebar_font_color!'#ffffff'};
+
+    }   
 </style>
 </#if>
 
@@ -45,6 +46,17 @@
             </div>
         </div>
     </div>
+    <div class="sidebar_nav">
+        <@menuTag method="list">
+            <#list menus?sort_by('priority') as menu>
+                <div>
+                    <a href="${menu.url!}" target="${menu.target!}">${menu.name!} </a>
+                </div>
+            </#list>
+        </@menuTag>
+    </div>
+
+
     <#include "social-list.ftl">
     <div>
     </div>

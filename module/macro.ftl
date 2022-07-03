@@ -14,7 +14,6 @@
     <meta name="keywords" content="${meta_keywords!}"/>
     <meta name="description" content="${meta_description!}" />
     <@global.head />
-    <link href="${theme_base!}/source/plugins/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
     <link href="${theme_base!}/source/css/blog_basic.min.css?version=88107691fe" rel="stylesheet">
     <link href="${theme_base!}/source/css/style.min.css" type="text/css" rel="stylesheet" />
 
@@ -91,48 +90,21 @@
         }
         ${settings.custom!}
 
-        <#if settings.post_split?? && settings.post_split == 'on'>
-        @media screen and (min-width:960px) {
-            .post-page .post {
-                margin: 2em 2em;
-                padding: 3em;
-                border: .5px solid #dddddd;
-                border-radius: 5px;
-            }
-            .post-entry {
-                padding: 3em;
-                margin: 2em;
-                border: .5px solid #dddddd;
-                border-radius: 5px;
-            }
-            .post-entry .post-entry-footer .meta{
-                border-bottom: unset;
-                padding: unset;
-            }
-        }
-
-        </#if>
     </style>
 </head>
 <body>
 </#macro>
 <#macro footer>
 <script type="text/javascript" src="${theme_base!}/source/js/jquery.min.js"></script>
-<script type="text/javascript">
-    var url = location.href;
-    var urlstatus = false;
-    $(".nav li a").each(function () {
-        if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
-            $(this).addClass('current');
-            urlstatus = true;
-        } else {
-            $(this).removeClass('current');
-        }
-    });
-    if (!urlstatus) {
-        $(".nav li a").eq(0).addClass('current');
-    }
 
+
+<#if is_index??>
+    <script src="${theme_base!}/source/js/bootstrap.min.js"></script>
+    <link href="${theme_base!}/source/css/slider.css" type="text/css" rel="stylesheet"/>
+    <script>$('#carouselExampleIndicators').carousel(2000);</script>
+</#if>
+
+<script type="text/javascript">
     <#if settings.hitokoto!false>
 	  var xhr = new XMLHttpRequest();
 	  xhr.open('get', 'https://v1.hitokoto.cn');
@@ -145,6 +117,37 @@
       };
 	  xhr.send();
     </#if>
+
+    // 侧边栏拓展插件
+    $(function(){
+    'use strict';
+    var sidebar = $('.sidebar'); //选择侧栏
+    var mask=$(".mask"); //选择遮罩
+    // var backButton = $('.back-to-top'); //选择返回顶部
+    var sidebar_trigger=$('#sidebar_trigger');//选择侧栏触发器
+    var pagetop = $(".page-top");
+
+    function showSidebar(){  //显示侧栏
+        mask.fadeIn();  //显示mask
+        if ($(window).width() > 960){
+            sidebar.animate({'left':0});  //调整侧栏css
+        } else {
+            sidebar.css('display','unset')
+            sidebar.animate({'top':pagetop.height()});  //调整侧栏css
+        }
+        }
+    function hideSideBar(){  //隐藏mask
+        mask.fadeOut();
+        if ($(window).width() > 960){
+            sidebar.css('left',-sidebar.width());
+        } else {
+            sidebar.css('top',-sidebar.height());
+            <#--  sidebar.css('display','none');  -->
+        }
+        }
+    sidebar_trigger.on('click',showSidebar); //监听侧栏触发器点击
+    mask.click(hideSideBar);   //监听mask
+})
 </script>
 <@global.statistics />
 </body>

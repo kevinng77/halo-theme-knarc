@@ -8,11 +8,6 @@ function documentClickToc(target) {
   var moonToc = $('.moon-content')
   if (moonToc && moonToc.hasClass('mm-active')) {
     if (target.id && target.id === "moonToc") {
-    } else if (target.id && target.id === "moonMenu") {
-    } else if (target.id && target.classList.contains('icon-toc')) {
-    } else if (target.classList.contains('moon-menu-button')) {
-    } else if (target.classList.contains('moon-menu-text')) {
-    } else if (target.classList.contains('moon-menu-content')) {
     } else if (getClientWidth()<960){ 
       toggleSmallToc();
     } else{
@@ -182,7 +177,7 @@ function getClientWidth() {
 }
 
 function initToc() {
-  const headerEl = "h1,h2,h3,h4,h5,h6", //headers
+  const headerEl = "h1,h2,h3", //headers
     content = ".content"; //文章容器
   tocbot.init({
     tocSelector: "#toc",
@@ -246,74 +241,9 @@ function initMoonToc() {
   if (moonToc && moonToc.children().length === 0) {
     $('.icon-toc').addClass('hidden');
   }
-  var div = document.getElementById("moonToc");
-  var title = document.createElement("div");
-  title.innerText = "大纲"
-  title.setAttribute('class','moon-content-title');
-  div.appendChild(title);
-
-
-}
-
-function toggleCircle() {
-  var $moonDot = $('g.moon-dot');
-  var firstCircle = $moonDot.children('circle:first');
-  var lastCircle = $moonDot.children('circle:last');
-  var cy = $(firstCircle).attr('cy');
-  if (cy === '0') {
-    $(firstCircle).attr('cx', '0');
-    $(firstCircle).attr('cy', '-.8rem');
-    $(lastCircle).attr('cx', '0');
-    $(lastCircle).attr('cy', '.8rem');
-  } else {
-    $(firstCircle).attr('cx', '-.8rem');
-    $(firstCircle).attr('cy', '0');
-    $(lastCircle).attr('cx', '.8rem');
-    $(lastCircle).attr('cy', '0');
-  }
 }
 
 function ckMoonButton() {
-  // 右下角的小点
-
-  toggleCircle();
-  // $('.moon-menu-items').toggleClass('item-ani');
   toggleSmallToc();
-
+  $(".menu-open-icon").toggleClass("active");
 }
-
-((window, document) => {
-
-  const moonMenuListener = function() {
-    // Get scroll percent
-    const offsetHeight = document.documentElement.offsetHeight;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-    let percent = Math.round(0.1 + scrollTop / (scrollHeight - offsetHeight) * 100);
-    if (percent > 100) percent = 100;
-
-    // const menuIcon = document.querySelector('.moon-menu-icon');
-    const menuText = document.querySelector('.moon-menu-text');
-    if (!percent) {
-      percent = 0;
-      // menuIcon.style.display = 'block';
-      menuText.style.display = 'none';
-      $('g.moon-dot').show();
-    } else {
-      // menuIcon.style.display = 'none';
-      menuText.style.display = 'block';
-      menuText.innerHTML = percent + '%';
-      $('g.moon-dot').hide();
-    }
-
-    // Update strokeDasharray
-    const length = 196;
-    document.querySelector('.moon-menu-border').style.strokeDasharray = 1 + percent * length / 100 + ' ' + length;
-  };
-
-  window.addEventListener('load', () => {
-    moonMenuListener();
-  });
-  window.addEventListener('scroll', moonMenuListener);
-
-})(window, document);

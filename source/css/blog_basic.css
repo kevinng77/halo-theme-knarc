@@ -1,5 +1,8 @@
+
 .post-content p {
-    font-size: 14px !important
+    letter-spacing: 0.5440000295639038px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .post-content .tip {
@@ -34,10 +37,6 @@
     word-break: break-all
 }
 
-pre {
-    max-height: 30em;
-}
-
 html {
     height: 100%;
     max-height: 100%;
@@ -48,7 +47,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    line-height: 2em
+    line-height: 1.7em;
 }
 
 .clear {
@@ -68,7 +67,8 @@ h5,
 h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
-/*     margin: 2rem 0 */
+    margin: 2rem 0;
+    color: #232323;
 }
 
 h1 {
@@ -83,6 +83,7 @@ h2 {
     padding-bottom: .7em ;
     border-bottom: 1px solid #dbdbdb
 }
+
 h1::before,
 h1::after,
 h2::before, 
@@ -97,7 +98,8 @@ h6::before{
 
 h1::before{
     content: "——";
-}
+} 
+
 h1::after{
     content: "——";
     margin-left: 10px;
@@ -106,33 +108,35 @@ h1::after{
 h2::before {
     content: "-";
     background-color: #4786d6;
-}
+} 
+
 .post-content h3::before{
     content: "#";
-}
+} 
+
 h4::before{
     content: "##";
 }
-.post-content h3 {
-    font-size: 1.1rem
-}
 
-h4,h5,h6 {
-    font-size: 1rem
-}
+
 
 @media screen and (max-width:960px) {
     h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 1em 0;
-}
-h3{
-    font-size: 15px;
-}
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1em 0;
+    }
+
+    h1, h2, h3, h4{
+        font-size: 15px;
+    }
+
+    .post-content p {
+        font-size: 13px;
+    }
 }
 
 img {
@@ -144,7 +148,7 @@ dl,
 ol,
 p,
 ul {
-    margin: 1em 0
+    margin: 1.3em 0
 }
 
 ol ol,
@@ -165,15 +169,13 @@ ul p {
     margin: 0;
     overflow: visible;
 }
+
 @media screen and (min-width:960px) {
     .content blockquote p {
         padding-right: 1em;
     }
-    
 }
-a img {
-    border: none
-}
+
 
 dl dt {
     float: left;
@@ -200,24 +202,17 @@ hr {
     margin: 3.2em 0;
     padding: 0
 }
-
+    
 blockquote {
     box-sizing: border-box;
+    color:#232b32;
     margin: 1.6em 0 1.6em;
-    padding: 1em 0 1em 1.6em;
-    border-left: #4a4a4a .4em solid;
+    padding: .6em 0 .6em 1.6em;
+    border-left: #6ba4e7 .1875rem solid;
     background-color: #f9f9f9;
 }
 
-@media screen and (max-width:960px) {
-    blockquote {
-        margin: 1.6em 0 1.6em -2.2em;
-    }
-}
 
-blockquote p {
-    margin: .8em 0
-}
 
 blockquote small {
     display: inline-block;
@@ -246,12 +241,6 @@ tt {
     white-space: pre-wrap;
     color: #d14;
     border-radius: 2px
-}
-
-.toc {
-    border: 1px solid #f0f0f0;
-    margin-bottom: 20px;
-    padding: 10px 30px
 }
 
 p code,

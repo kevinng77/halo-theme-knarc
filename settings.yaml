@@ -27,11 +27,6 @@ sns:
       label: Instagram
       type: text
       placeholder: '只需填入 Instagram 用户名即可'
-    dribbble:
-      name: dribbble
-      label: Dribbble
-      type: text
-      placeholder: '只需填入 Dribbble 用户名即可'
     weibo:
       name: weibo
       label: 微博
@@ -52,11 +47,7 @@ sns:
       label: QQ
       type: text
       placeholder: '只需填入 QQ 号即可'
-    telegram:
-      name: telegram
-      label: Telegram
-      type: text
-      placeholder: '只需填入 Telegram Id 即可'
+
 style:
   label: 样式设置
   items:
@@ -71,6 +62,7 @@ style:
           label: 开启
         - value: false
           label: 关闭
+
     blog_title_uppper:
       name: blog_title_uppper
       label: 博客标题大写
@@ -94,34 +86,12 @@ style:
           label: 开启
         - value: false
           label: 关闭
-    
-    post_split:
-      name: post_split
-      label: '文章与左边栏/顶栏分离，以块形式显示'
-      type: radio
-      default: 'off'
-      options:
-        - value: 'off'
-          label: '关'
-        - value: 'on'
-          label: '开'
-
-    sidebar_shadow:
-      name: sidebar_shadow
-      label: '左边栏阴影'
-      type: radio
-      default: 'on'
-      options:
-        - value: 'on'
-          label: '开'
-        - value: 'off'
-          label: '关'
 
     sidebar_style:
       name: sidebar_style
       label: '侧边栏/顶栏风格'
       type: radio
-      default: 'arc'
+      default: 'white'
       options:
         - value: 'arc'
           label: 'arc风格'
@@ -167,7 +137,8 @@ style:
         - value: 'vs2015'
           label: 'vs2015' 
         - value: 'stackoverflow-light'
-          label: 'stackoverflow-light'        
+          label: 'stackoverflow-light' 
+                 
     code_line_number:
       name: code_line_number
       label: 开启代码行号
@@ -179,6 +150,7 @@ style:
           label: 开启
         - value: false
           label: 关闭
+
     custom:
       name: custom
       label: 自定义样式
