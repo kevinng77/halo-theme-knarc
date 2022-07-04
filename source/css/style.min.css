@@ -9,7 +9,6 @@ p {
     font-weight: 400;
     font-size: 14px;
     word-break: break-all;
-    letter-spacing: 1px;
 }
 
 a {
@@ -146,7 +145,7 @@ a:hover,
 }
 
 .page-top .blog_title {
-    font-family: georgia, fangzheng, serif ;
+    font-family: georgia, fangzheng,FangSong_GB2312, serif ;
     font-size: 30px;
 }
 
@@ -281,7 +280,7 @@ a:hover,
     z-index: 6;
     top: 45%;
     color: #fff;
-    font-family:  georgia, fangzheng, serif ;
+    font-family: georgia, fangzheng,FangSong_GB2312, serif ;
     right: 0;
     left:0;
     text-align: center;
@@ -322,7 +321,7 @@ a:hover,
 .sidebar .sidebar_nav {
     font-size: 18px;
     text-align: center;
-    font-family: georgia, fangzheng, serif;
+    font-family: georgia, fangzheng,FangSong_GB2312, serif ;
 }
 
 .sidebar .logo-title .description,
@@ -362,21 +361,21 @@ a:hover,
 /* post content design for article and page */
 .post {
     padding: 2em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5440000295639038px;
 }
 
 .post-entry {
     padding: 1em 2em;
 }
 
-h1, h2, h3, h4, 
-.listing-post-title,
-.listing-title {
-    font-family: georgia, fangzheng, serif;
+h1, h2, h3, h4 {
+    font-family: georgia, FangSong_GB2312, serif ;
 }
 
-.post .post-title {
-    font-family: georgia, fangzheng, serif;
+.listing-post-title,
+.listing-title,
+.post .post-title h3 {
+    font-family: georgia, fangzheng, FangSong_GB2312, serif ;
     font-weight: bold;
 }
 
@@ -399,7 +398,6 @@ h1, h2, h3, h4,
 
 .post .post-title h2 {
     text-transform: uppercase;
-    letter-spacing: 1px;
     font-size: 28px;
     line-height: 1;
     font-weight: 600;
@@ -408,7 +406,6 @@ h1, h2, h3, h4,
 
 .post .post-title h3 {
     text-transform: uppercase;
-    letter-spacing: 1px;
     line-height: 1;
     font-weight: 600;
     color: #464646;
@@ -418,14 +415,12 @@ h1, h2, h3, h4,
 
 .post .post-title a {
     text-decoration: none;
-    letter-spacing: 1px;
     color: #5f5f5f
 }
 
 
 .post .post-content a {
     text-decoration: none;
-    letter-spacing: 1px;
     color: #4786d6
 }
 
@@ -755,7 +750,7 @@ a.btn {
 
 .tag-black {
     display: inline-block;
-    font-family: georgia, fangzheng, serif ;;
+    font-family: georgia, fangzheng,FangSong_GB2312, serif ;
 }
 
 @media screen and (max-width:960px) {
