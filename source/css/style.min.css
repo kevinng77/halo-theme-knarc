@@ -325,6 +325,12 @@ a:hover,
     font-family: georgia, fangzheng, serif;
 }
 
+.sidebar .logo-title .description,
+.sidebar a,
+.social-links .link-icon {
+    color: #232323;
+    fill: #232323
+}
 
 .sidebar .logo-title .title h3 {
     text-transform: uppercase;
@@ -498,6 +504,9 @@ h1, h2, h3, h4,
 
 
 @media screen and (max-width:960px) {
+    .min-screen-margin {
+        margin-top: 60px ;
+    }
     #slider,
     .page-top .right-nav,
     .link_logo,

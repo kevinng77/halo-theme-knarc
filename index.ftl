@@ -6,7 +6,7 @@
     <div class="mask"></div>
     <div class="autopagerize_page_element animated fadeInDown">
         <#include "module/slider.ftl">
-        <div class="content">
+        <div class="content min-screen-margin">
             <#include "module/post-entry.ftl">
             <#if posts.totalPages gt 1>
                 <@paginationTag method="index" page="${posts.number?c}" total="${posts.totalPages?c}" display="3">
