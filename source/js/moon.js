@@ -32,10 +32,7 @@ function getHashCode(str, caseSensitive) {
  * 处理目录
  */
 function dealContentToc() {
-  if (getClientWidth() > 1359) {
-    initToc();
-    scrollTocFixed();
-  } else {
+
     var smallToc = $('.moon-menu-item.icon-toc');
     if (smallToc) {
       smallToc.toggleClass('hidden');
@@ -48,7 +45,7 @@ function dealContentToc() {
       documentClickToc(target);
     });
 
-  }
+  
 }
 
 /**
@@ -176,26 +173,26 @@ function getClientWidth() {
   return document.body.clientWidth;
 }
 
-function initToc() {
-  const headerEl = "h1,h2,h3", //headers
-    content = ".content"; //文章容器
-  tocbot.init({
-    tocSelector: "#toc",
-    contentSelector: content,
-    headingSelector: headerEl,
-    scrollSmooth: true,
-    headingsOffset: 0 - $("#postHeader").height(),
-    // scrollSmoothOffset: -80, // 实现点击目录精准跳转到header
-    hasInnerContainers: false,
-  });
+// function initToc() {
+//   const headerEl = "h1,h2,h3", //headers
+//     content = ".content"; //文章容器
+//   tocbot.init({
+//     tocSelector: '#moonToc',
+//     contentSelector: content,
+//     headingSelector: headerEl,
+//     scrollSmooth: true,
+//     headingsOffset: 0 - $("#postHeader").height(),
+//     // scrollSmoothOffset: -80, // 实现点击目录精准跳转到header
+//     hasInnerContainers: false,
+//   });
 
-  $(".toc-link").each(function () {
-    const linkContent = $(this).html();
-    $(this).html('<span class="toc-link-dot"></span>' + linkContent);
-  });
-  // 设置目录right
-  tocEleRight();
-}
+//   $(".toc-link").each(function () {
+//     const linkContent = $(this).html();
+//     $(this).html('<span class="toc-link-dot"></span>' + linkContent);
+//   });
+//   // 设置目录right
+//   tocEleRight();
+// }
 
 function tocEleRight() {
   const screenWidth = getClientWidth();
