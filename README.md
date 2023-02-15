@@ -2,7 +2,6 @@
 
 ## 说明
 
-预览效果欢迎参考我的博客：http://wujiawen.xyz
 
 本主题 v1.0 版本基于 [halo-theme-anatole](https://github.com/halo-dev/halo-theme-anatole) 进行了修改，其主题的原作者为 [Caicai](https://www.caicai.me)。**个人非常喜欢 Anatole 的简约风格，非常感谢主题的原作者！！** 
 
